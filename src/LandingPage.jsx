@@ -8,14 +8,17 @@ import ContactInfo from './components/ContactInfo'
 import Footer from './components/Footer'
 const LandingPage = () => {
   return (
-    <div>
+    <div className='flex flex-col h-auto'>
         <Navbar/>
+        <div className='pt-16 '>
         <HeroSection/>
         <AboutProduct/>
         <AboutInnovator/>
         <ProductShowcase/>
         <ContactInfo/>
         <Footer/>
+        </div>
+        
     </div>
   )
 }
