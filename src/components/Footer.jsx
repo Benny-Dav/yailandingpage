@@ -9,7 +9,7 @@ import locwhite from "../assets/icons/locwhite.png"
 
 const Footer = () => {
   return (
-    <div className='h-[35vh] bg-cover bg-center relative px-8 py-6 text-[white] flex flex-col text-center gap-4' style={{backgroundImage:`url(${footerbg})`}}>
+    <div className='h-[35vh] lg:h-auto lg:bottom-0 bg-cover bg-center relative px-8 py-6 text-[white] flex flex-col text-center gap-4' style={{backgroundImage:`url(${footerbg})`}}>
       {/* overlay */}
        <div className='inset-0 absolute z-10' style={{background:"rgba(0,0,0,0.7)"}}></div>
 
@@ -46,7 +46,8 @@ const Footer = () => {
      
        
 
-       <p className='z-30 mx-auto'>© 2025 Amitech. All rights reserved.</p>
+       <Link className='z-30 mx-auto'>
+       <p>© 2025 Amitech. All rights reserved.</p></Link>
     </div>
 
   )

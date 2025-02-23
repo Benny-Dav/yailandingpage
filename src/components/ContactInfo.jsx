@@ -31,7 +31,7 @@ const ContactInfo = () => {
     },
   ]
   return (
-    <section className='h-[100vh] flex flex-col bg-[#F9FAFC] w-full px-8 py-8 text-[#555555]'>
+    <section className='h-[100vh] lg:[100vh] flex flex-col bg-[#F9FAFC] w-full px-8 py-8 text-[#555555]'>
       <h2 className='font-semibold text-center'>Contact Us</h2>
             {/* fish and squigly lines */}
             <div className='w-[25%] flex justify-between mx-auto'>
@@ -42,11 +42,11 @@ const ContactInfo = () => {
 
             <p className='text-center mb-8'>We'd love to hear from you if you want to support our business or make enquiries.</p>
 
-            <div className='grid grid-rows-3 gap-4 '>
+            <div className='grid grid-rows-3 lg:grid-cols-3 gap-4 '>
               {
                 ContactCards.map((card, index)=>{
                   return(
-                    <div key={index} className='bg-white h-40 flex flex-col px-4 py-4 gap-16'>
+                    <div key={index} className='bg-white h-40 flex flex-col px-4 py-4 gap-16 rounded-lg'>
       <p>{card.title}</p>
       <h3 className='font-extrabold text-2xl '>{card.info}</h3>
       

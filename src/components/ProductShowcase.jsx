@@ -1,9 +1,14 @@
 import React from 'react'
 import fish from "../assets/icons/fish.png"
+import fish1 from "../assets/images/fish1.jpg"
+import fish2 from "../assets/images/fish2.jpg"
+import fish3 from "../assets/images/fish3.jpg"
+import fish4 from "../assets/images/fish4.jpg"
+
 import squigly from "../assets/icons/squigly.png"
 const ProductShowcase = () => {
   return (
-    <section className='h-[60vh] lg:h-[90vh] flex flex-col px-8 pb-8'>
+    <section className='h-[80vh] lg:h-[100vh] flex flex-col px-8 pb-8 lg:px-18 lg:pt-10'>
       <h2 className='font-semibold text-center'>Our Products</h2>
       {/* fish and squigly lines */}
       <div className='w-[25%] flex justify-between mx-auto'>
@@ -12,14 +17,22 @@ const ProductShowcase = () => {
         <img src={squigly} alt="" className='w-8'/>
       </div>
     
-      <p className='text-center mb-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur adipisicing elit.</p>
+      <p className='text-center mb-4'>Transforming Waste into Value – Explore Our Innovative, Affordable Refrigeration for Fisher Folks!</p>
 
       {/* showcase grid */}
-      <div className='grid grid-cols-2 lg:grid-cols- gap-4 h-full mb-4'>
-        <div className='border'></div>
-        <div className='border'></div>
-        <div className='border'></div>
-        <div className='border'></div>
+      <div className='grid grid-cols-2 lg:grid-cols-2 gap-4 h-full mb-4 '>
+        <div className=''>
+          <img src={fish1} alt="" className='object-cover h-full' />
+        </div>
+        <div className=''>
+        <img src={fish2} alt="" className='object-cover h-full' />
+        </div>
+        <div className=''>
+        <img src={fish3} alt="" className='object-cover h-full' />
+        </div>
+        <div className=''>
+        <img src={fish4} alt="" className='object-cover h-full' />
+        </div>
        
       </div>
     </section>
