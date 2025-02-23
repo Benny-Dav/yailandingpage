@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import nextblue from "../assets/icons/nextblue.png"
 import bullet from "../assets/icons/bullet.png"
-import fish1 from "../assets/images/fish2.jpg"
+import fish1 from "../assets/images/fish1.jpg"
 import fish2 from "../assets/images/fish2.jpg"
 import fish3 from "../assets/images/fish3.jpg"
 
@@ -15,7 +15,7 @@ const AboutProduct = () => {
   const sections=[
     {
       title:"How it came about",
-      img:fish1,
+      image:fish1,
       content:(
         <>
 
@@ -75,7 +75,7 @@ Reduces Post-Harvest Losses: Preserves fish for longer, minimizing waste and inc
     }
   ]
   return (
-    <section className='h-[60vh] lg:h-[90vh] px-8 pt-8 lg:flex z-20 lg:px-18'>
+    <section id="product" className='h-[70vh] lg:h-[90vh] px-8 pt-16 lg:flex z-20 lg:px-18'>
       {/* problem statement display */}
       <div className=' flex flex-col h-full py-2 gap-4 lg:w-[60%] lg:pr-20'>
       <p className='font-semibold text-[#15768C]'>About</p>
@@ -88,7 +88,7 @@ Reduces Post-Harvest Losses: Preserves fish for longer, minimizing waste and inc
 
       {/* image only visible in lg screen */}
       <div className='hidden lg:flex w-[40%] '>
-        <img src={sections[step].image} alt="" />
+        <img src={sections[step].image} alt="" className='h-[80%]'/>
       </div>
     </section>
   )

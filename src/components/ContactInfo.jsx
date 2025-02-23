@@ -31,10 +31,10 @@ const ContactInfo = () => {
     },
   ]
   return (
-    <section className='h-[100vh] lg:[100vh] flex flex-col bg-[#F9FAFC] w-full px-8 py-8 text-[#555555]'>
+    <section id="contact" className='h-[100vh] lg:[100vh] flex flex-col bg-[#F9FAFC] w-full px-8 py-8 text-[#555555]'>
       <h2 className='font-semibold text-center'>Contact Us</h2>
             {/* fish and squigly lines */}
-            <div className='w-[25%] flex justify-between mx-auto'>
+            <div className='w-24 flex justify-between mx-auto'>
               <img src={squigly} alt="" className='w-8'/>
               <img src={fish} alt="" className='w-6'/>
               <img src={squigly} alt="" className='w-8'/>

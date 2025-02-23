@@ -2,11 +2,14 @@ import React from 'react'
 import innovator from "../assets/images/innovator.jpg"
 const AboutInnovator = () => {
   return (
-    <section className='h-[80vh] lg:h-[100vh] flex flex-col px-8 py-8 lg:flex-row lg:px-18'>
+    <section id="innovator" className='h-[100vh] lg:h-[100vh] flex flex-col px-8 py-8 lg:flex-row lg:px-18'>
       {/* image */}
-      <div className='h-[50%] lg:h-full lg:w-full border bg-cover bg-center bg-no-repeat' style={{backgroundImage:`url(${innovator})`}}>
+      <div className=' bg-[#15768C] h-[50%] lg:h-[80%] lg:w-full rounded-xl '>
+      <div className='h-full lg:h-full lg:w-full rounded-xl bg-cover bg-center bg-no-repeat ml-2 mt-2' style={{backgroundImage:`url(${innovator})`}}>
 
+</div>
       </div>
+     
       {/* about innovator text */}
       <div className='flex flex-col pt-4 lg:py-24 text-center'>
       <p className='font-semibold text-[#15768C] text-center mb-4 '>About</p>
