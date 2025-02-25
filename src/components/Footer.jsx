@@ -22,26 +22,29 @@ const Footer = () => {
 
        <div className='z-30 text-[white]'>
         {/* logo */}
-      <div className='flex justify-center items-center gap-2'>
-      <img src={locwhite} alt="" className='w-6'/>
-      <p>Takoradi Anaji</p>
-      </div>
-      <div className='flex justify-center items-center gap-2'>
-      <img src={mailwhite} alt="" className='w-6'/>
-      <p>alidavid@gmail.com</p>
-      </div>
-      <div className='flex justify-center items-center gap-2'>
-      <img src={phonewhite} alt="" className='w-6'/>
-      <p>0595742231</p>
-      </div>
+        <div className='flex justify-center gap-2 items-center'>
+
+          <div className='flex flex-col '>
+          <img src={locwhite} alt="" className='w-6'/>
+          <img src={mailwhite} alt="" className='w-6'/>
+          <img src={phonewhite} alt="" className='w-6'/>
+          </div>
+
+          <div className='flex flex-col text-left'>
+          <p>Takoradi Anaji</p>
+          <p>alidavid@gmail.com</p>
+          <p>0595742231</p>
+          </div>
+        </div>
+     
        </div>
 
        <div className='z-30 text-[white] flex justify-between items-center w-[60%] mx-auto mb-4'>
         {/* logo */}
     
-      <li className='list-none underline'><Link>Instagram</Link></li>
-      <li className='list-none underline'><Link>Tiktok</Link></li>
-      <li className='list-none underline'><Link>Whatsapp</Link></li>
+      <li className='list-none underline'><Link></Link></li>
+      <li className='list-none underline'><Link></Link></li>
+      <li className='list-none underline'><Link></Link></li>
        </div>
      
        

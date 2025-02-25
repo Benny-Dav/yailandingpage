@@ -4,7 +4,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className='h-16  flex justify-between items-center px-6 w-full fixed top-0 left-0 z-10 bg-white'>
+    <nav className='h-16  flex justify-between items-center px-6 w-full fixed top-0 left-0 z-50 bg-white'>
       {/* logo */}
       <a href="#home"><h1 className='text-2xl font-extrabold text-[#15768C]'>fish.</h1></a>
       {/* menu */}
@@ -15,8 +15,8 @@ const Navbar = () => {
       {/* lg menu */}
       <div className='hidden ml-[50%] lg:flex justify-between items-center w-full'>
       <ul className='flex justify-between items-center gap-8 font-semibold pt-2'>
-            <a href="home"><li >Home</li></a>
-            <a href="product"><li >About</li></a>
+            <a href="#home"><li >Home</li></a>
+            <a href="#product"><li >About</li></a>
             <a href="#innovator"><li >Innovator</li></a>
             <a href="#showcase"><li >Showcase</li></a>
             <a href="#contact"><li>Contact</li></a>

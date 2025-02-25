@@ -31,8 +31,8 @@ const ContactInfo = () => {
     },
   ]
   return (
-    <section id="contact" className='h-[100vh] lg:[100vh] flex flex-col bg-[#F9FAFC] w-full px-8 py-8 text-[#555555]'>
-      <h2 className='font-semibold text-center'>Contact Us</h2>
+    <section id="contact" className='h-[100vh] lg:h-[100vh] flex flex-col bg-[#F9FAFC] w-full px-8 lg:px-16 py-8 text-[#555555]'>
+      <h2 className='font-semibold text-center text-xl'>Contact Us</h2>
             {/* fish and squigly lines */}
             <div className='w-24 flex justify-between mx-auto'>
               <img src={squigly} alt="" className='w-8'/>

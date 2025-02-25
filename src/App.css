@@ -3,7 +3,13 @@
 h1,h2,h3,h4,h5{
     font-family: 'Poppins',serif;
 }
+
 *{
     font-family: 'Lora',serif;
-    color:"#555555"
+    color:"#555555";
+    
+}
+
+html{
+    scroll-behavior:"smooth"
 }

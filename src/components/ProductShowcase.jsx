@@ -10,7 +10,7 @@ import squigly from "../assets/icons/squigly.png"
 const ProductShowcase = () => {
   return (
     <section id="showcase"  className='h-[80vh] lg:h-[100vh] flex flex-col px-8 pb-8 lg:px-18 lg:pt-10 pt-8'>
-      <h2 className='font-semibold text-center'>Our Products</h2>
+      <h2 className='font-semibold text-center text-xl'>Our Products</h2>
       {/* fish and squigly lines */}
       <div className='w-24 flex justify-between mx-auto'>
         <img src={squigly} alt="" className='w-8'/>
