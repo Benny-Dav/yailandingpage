@@ -49,8 +49,8 @@ const Footer = () => {
      
        
 
-       <Link to="https://benedictadavour.netlify.app/" target="_blank" className='z-30 mx-auto'>
-       <p className='hover:text-[#15768C]'>© 2025 Amitech. All rights reserved.</p></Link>
+       <p className='z-30 mx-auto'>
+       © 2025 Benedicta Davour. All rights reserved.</p>
     </div>
 
   )
