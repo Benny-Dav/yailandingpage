@@ -1,18 +1,42 @@
-import React from 'react'
-import innovator from "../assets/images/innovator.jpg"
+import React, { useState, useEffect } from 'react'
+import innovator from "../assets/images/innovator.png"
 const AboutInnovator = () => {
-  return (
-    <section id="innovator" className='h-[100vh] md:h-[70vh] lg:h-[100vh] flex flex-col px-8 py-8 lg:flex-row lg:px-18'>
-      {/* image */}
-      <div className=' bg-[#15768C] h-[50%] lg:h-[80%] lg:w-full rounded-xl '>
-      <div className='h-full lg:h-full lg:w-full rounded-xl bg-cover bg-center bg-no-repeat ml-2 mt-2' style={{backgroundImage:`url(${innovator})`}}>
+  const [isVisible, setIsVisible]=useState(false);
 
-</div>
+  useEffect(()=>{
+    const handleScroll=()=>{
+      const section = document.getElementById("innovator");
+
+      if(!section) return;
+
+      const rect = section.getBoundingClientRect();
+      const triggerPoint = window.innerHeight*0.8;
+
+      if(rect.top < triggerPoint){
+        setIsVisible(true);
+      }else{
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll",handleScroll);
+    handleScroll();
+
+    return()=>window.removeEventListener("scroll",handleScroll);
+  },[]);
+
+  return (
+    <section id="innovator" className='h-[100vh] md:h-[70vh] lg:h-[90vh] flex flex-col px-8 py-8 lg:pb-0 lg:flex-row lg:px-18 bg-[#dbe7ff]'>
+      {/* image */}
+      <div className='  h-[50%] lg:h-full lg:w-full rounded-xl overflow-hidden  '>
+      <img src={innovator} alt="Innovator" className={` transition-transform duration-3000 h-full ease-out ${
+            isVisible ? "translate-y-0 opacity-100 " : "translate-y-[300px] opacity-100"
+          }`}/>
       </div>
      
       {/* about innovator text */}
-      <div className='flex flex-col pt-4 lg:py-24 text-center'>
-      <p className='font-semibold text-[#15768C] text-center mb-4 text-xl '>MEET THE INNOVATOR</p>
+      <div className='flex flex-col pt-4 lg:py-24 text-center text-black'>
+      <p className='font-semibold text-[#ffe000] text-center mb-4 text-xl '>MEET THE INNOVATOR</p>
       <p className='w-[80%] mx-auto'>Ali Davis Desmond, an innovative problem-solver from New Takoradi, Western Region, is dedicated to addressing challenges in the fishing industry. Passionate about sustainability and economic empowerment, he created this solution to help fisher folks maximize their harvests while reducing environmental waste.</p>
       <p className='w-[80%] mx-auto'>Ali schooled in the St. Johns secondary school where he studied General Science. He went ahead to further his education in KNUST, and graduated with a bachelor's degree in Agriculture. His hobbies include listening to music and observing animals in nature</p>
       

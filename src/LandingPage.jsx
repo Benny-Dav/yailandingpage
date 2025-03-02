@@ -8,7 +8,7 @@ import ContactInfo from './components/ContactInfo'
 import Footer from './components/Footer'
 const LandingPage = () => {
   return (
-    <div className='flex flex-col h-auto'>
+    <div className='flex flex-col h-auto'  >
         <Navbar/>
         <div className='pt-16 '>
         <HeroSection/>
@@ -24,3 +24,5 @@ const LandingPage = () => {
 }
 
 export default LandingPage
+// style={{background: "linear-gradient(135deg, #0a0a0a, #1c1c1c, #333333, #4d4d4d)"
+// }}

@@ -13,3 +13,20 @@ h1,h2,h3,h4,h5{
 html{
     scroll-behavior:"smooth"
 }
+
+#revealimg{
+    
+    animation:2s revealup ease; 
+    z-index: -10;
+}
+
+@keyframes revealup{
+    from{
+        opacity:0;
+        transform:translateY(15%);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
