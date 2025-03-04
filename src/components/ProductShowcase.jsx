@@ -13,8 +13,8 @@ import Slider from 'react-slick'
 
 const ProductShowcase = () => {
   var settings = {
-    dots: true,
-    arrows: true,
+    dots: false,
+    arrows: false,
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
