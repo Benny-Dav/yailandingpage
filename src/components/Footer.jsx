@@ -1,59 +1,64 @@
-import React from 'react'
-import footerbg from "../assets/images/footerbg.jpg"
-import { Link } from 'react-router-dom'
-import phonewhite from "../assets/icons/phonewhite.png"
-import mailwhite from "../assets/icons/mailwhite.png"
-import locwhite from "../assets/icons/locwhite.png"
- 
- 
+import React from 'react';
+import footerbg from "../assets/images/footerbg.jpg";
+import { Link } from 'react-router-dom';
+import phonewhite from "../assets/icons/phonewhite.png";
+import mailwhite from "../assets/icons/mailwhite.png";
+import locwhite from "../assets/icons/locwhite.png";
 
 const Footer = () => {
   return (
-    <div className='h-[35vh] lg:h-auto lg:bottom-0 bg-cover bg-center relative px-8 py-6 text-[white] flex flex-col text-center gap-4' style={{backgroundImage:`url(${footerbg})`}}>
-      {/* overlay */}
-       <div className='inset-0 absolute z-10' style={{background:"rgba(0,0,0,0.7)"}}></div>
+    <div
+      className="relative bg-cover bg-center text-white px-8 py-10"
+      style={{ backgroundImage: `url(${footerbg})` }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
 
-        
-        <div className='w-full z-30 '>
-        {/* logo */}
-      <h1 className='text-2xl font-extrabold mb-2'>fish.</h1>
-      <p>Revolutionizing Fish Preservation with Affordable Eco-Fridges</p>
-       </div>
+      {/* Content */}
+      <div className="relative z-10 text-center flex flex-col items-center gap-6">
+        {/* Logo & Tagline */}
+        <div>
+          <h1 className="text-3xl font-extrabold">fish.</h1>
+          <p className="text-sm max-w-md mx-auto">
+            Revolutionizing Fish Preservation with Affordable Eco-Fridges
+          </p>
+        </div>
 
-       <div className='z-30 text-[white]'>
-        {/* logo */}
-        <div className='flex justify-center gap-2 items-center'>
-
-          <div className='flex flex-col '>
-          <img src={locwhite} alt="" className='w-6'/>
-          <img src={mailwhite} alt="" className='w-6'/>
-          <img src={phonewhite} alt="" className='w-6'/>
+        {/* Contact Information */}
+        <div className="flex items-start gap-4 text-sm">
+          <div className="flex flex-col gap-2">
+            <img src={locwhite} alt="Location" className="w-5 h-5" />
+            <img src={mailwhite} alt="Email" className="w-5 h-5" />
+            <img src={phonewhite} alt="Phone" className="w-5 h-5" />
           </div>
 
-          <div className='flex flex-col text-left'>
-          <p>Takoradi Anaji</p>
-          <p>alidavid@gmail.com</p>
-          <p>0595742231</p>
+          <div className="flex flex-col gap-2 text-left">
+            <p>Takoradi Anaji</p>
+            <p>alidavid@gmail.com</p>
+            <p>0595742231</p>
           </div>
         </div>
-     
-       </div>
 
-       <div className='z-30 text-[white] flex justify-between items-center w-[60%] mx-auto mb-4'>
-        {/* logo */}
-    
-      <li className='list-none underline'><Link></Link></li>
-      <li className='list-none underline'><Link></Link></li>
-      <li className='list-none underline'><Link></Link></li>
-       </div>
-     
-       
+        {/* Navigation Links */}
+        {/* <ul className="flex gap-6 text-sm font-medium">
+          <li className="hover:underline">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="hover:underline">
+            <Link to="/about">About</Link>
+          </li>
+          <li className="hover:underline">
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul> */}
 
-       <p className='z-30 mx-auto'>
-       © 2025 Benedicta Davour. All rights reserved.</p>
+        {/* Copyright */}
+        <p className="text-xs text-gray-300">
+          © 2025 Benedicta Davour. All rights reserved.
+        </p>
+      </div>
     </div>
+  );
+};
 
-  )
-}
-
-export default Footer
+export default Footer;
