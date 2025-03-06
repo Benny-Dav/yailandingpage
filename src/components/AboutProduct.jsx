@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import nextblue from "../assets/icons/nextblue.png";
+import nextblue from "../assets/icons/next.png";
 import bullet from "../assets/icons/bullet.png";
 import fish1 from "../assets/images/fish1.jpg";
 import fish2 from "../assets/images/fish2.jpg";
@@ -61,7 +61,7 @@ const AboutProduct = () => {
       )
     },
     {
-      title: "How it benefits the fish farmer",
+      title: "How it benefits the user",
       image: fish3,
       content: (
         <div className='flex flex-col gap-4'>

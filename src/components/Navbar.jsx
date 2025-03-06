@@ -6,7 +6,9 @@ import tkyt from "../assets/icons/tkyt.png"
 import fbyt from "../assets/icons/fbyt.png"
 import wayt from "../assets/icons/wayt.png"
 import { Link } from 'react-router-dom';
-
+import phonewhite from "../assets/icons/phonewhite.png"
+import mailwhite from "../assets/icons/mailwhite.png"
+import locwhite from "../assets/icons/locwhite.png"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,21 +40,30 @@ const Navbar = () => {
       <div className="h-10 bg-black flex justify-between items-center px-6 py-4">
         {/* socials */}
         <div className='h-full flex justify-between items-center'>
-        <Link><img src={fbyt} alt="" /></Link>
-        <Link><img src={tkyt} alt="" /></Link>
-        <Link><img src={wayt} alt="" /></Link>
+          <Link><img src={fbyt} alt="" /></Link>
+          <Link><img src={tkyt} alt="" /></Link>
+          <Link><img src={wayt} alt="" /></Link>
         </div>
         {/* contact info */}
         <div className='flex justify-between items-center text-white text-sm lg:gap-6'>
-          <p>
-            +233 595 742 231
-          </p>
-          <p className='hidden lg:flex'>
-            kingsway@gmail.com
-          </p>
-          <p className='hidden lg:flex'>
-            Anaji, Takoradi
-          </p>
+          <div className='flex justify-center items-center gap-2'>
+            <img src={phonewhite} alt="" className='h-6' />
+            <p className='hidden lg:flex'>+233 595 742 231</p>
+          </div>
+
+          <div className='flex justify-center items-center gap-2'>
+            <img src={mailwhite} alt="" className='h-6'  />
+            <p className='hidden lg:flex'>
+              kingsway@gmail.com
+            </p>
+          </div>
+
+          <div className='flex justify-center items-center gap-2'>
+            <img src={locwhite} alt="" className='h-6' />
+            <p className='hidden lg:flex'>
+              Anaji, Takoradi
+            </p>
+          </div>
         </div>
       </div>
 
@@ -70,9 +81,8 @@ const Navbar = () => {
               key={link}
               href={`#${link}`}
               onClick={(e) => handleLinkClick(e, `#${link}`)}
-              className={`pb-2 text-gray-700 font-semibold ${
-                activeSection === link ? "text-[#ffe000] border-b-2 border-[#ffe000]" : "hover:text-[#ffe000]"
-              }`}
+              className={`pb-2 text-gray-700 font-semibold ${activeSection === link ? "text-[#ffe000] border-b-2 border-[#ffe000]" : "hover:text-[#ffe000]"
+                }`}
             >
               {link.charAt(0).toUpperCase() + link.slice(1)}
             </a>
@@ -93,9 +103,8 @@ const Navbar = () => {
                   key={link}
                   href={`#${link}`}
                   onClick={(e) => handleLinkClick(e, `#${link}`)}
-                  className={`block mb-4 border-b w-full text-gray-700 ${
-                    activeSection === link ? "text-[#ffe000] font-bold" : "hover:text-[#ffe000]"
-                  }`}
+                  className={`block mb-4 border-b w-full text-gray-700 ${activeSection === link ? "text-[#ffe000] font-bold" : "hover:text-[#ffe000]"
+                    }`}
                 >
                   {link.charAt(0).toUpperCase() + link.slice(1)}
                 </a>

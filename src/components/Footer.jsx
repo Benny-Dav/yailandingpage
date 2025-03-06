@@ -4,21 +4,25 @@ import { Link } from 'react-router-dom';
 import phonewhite from "../assets/icons/phonewhite.png";
 import mailwhite from "../assets/icons/mailwhite.png";
 import locwhite from "../assets/icons/locwhite.png";
+import kwlogo from "../assets/icons/kwlogo.png"
 
 const Footer = () => {
   return (
     <div
-      className="relative bg-cover bg-center text-white px-8 py-10"
+      className="relative bottom-0 bg-cover bg-center text-white px-8 py-10"
       style={{ backgroundImage: `url(${footerbg})` }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-70"></div>
 
       {/* Content */}
-      <div className="relative z-10 text-center flex flex-col items-center gap-6">
+      <div className="relative z-10 text-center flex flex-col items-center gap-2">
         {/* Logo & Tagline */}
-        <div>
-          <h1 className="text-3xl font-extrabold">fish.</h1>
+        <div className='h-auto'>
+          {/* Logo */}
+                  <a href="#home">
+                    <img src={kwlogo} alt="Logo" className="h-34 mx-auto " />
+                  </a>
           <p className="text-sm max-w-md mx-auto">
             Revolutionizing Fish Preservation with Affordable Eco-Fridges
           </p>
