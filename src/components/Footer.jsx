@@ -58,7 +58,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <p className="text-xs text-gray-300">
-          © 2025 Benedicta Davour. All rights reserved.
+          © 2025 Kingsway Refridgerators. All rights reserved.
         </p>
       </div>
     </div>
